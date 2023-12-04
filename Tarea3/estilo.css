@@ -1,0 +1,60 @@
+body
+{
+background-color:#222;
+padding:20px;
+margin:0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:white;
+}
+h1
+{
+display:flex;
+justify-content:center;
+}
+.con-img
+{
+display:flex;
+justify-content:center;
+}
+.contenedorp
+{
+margin:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.contenedorp .subconte
+{
+display:flex;
+justify-content: center;
+padding:10px;
+width:400px;
+height:300px;
+border:solid;
+border-radius:10px;
+background-color:#196;
+box-shadow: 10px 10px 10px #111;
+overflow-y:scroll;
+}
+footer  
+{
+display:flex;
+justify-content:center;
+}
+a   
+{
+color:white;
+text-decoration:none;
+text-align: center;
+}
+.contenedorp .subconte .procesos
+{ 
+list-style:none;
+margin-top:-20px;
+}
+a :hover
+{
+color: black;
+box-shadow: 0px 0px 10px #111;
+
+}
