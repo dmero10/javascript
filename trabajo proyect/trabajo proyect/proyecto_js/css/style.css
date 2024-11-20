@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Contenedor de las tarjetas */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Estilos de las tarjetas */
+  .card {
+    flex: 1 1 calc(20% - 20px); /* Ajuste para 5 tarjetas por fila */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    min-height: 180px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .card a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .card a:hover {
+    background-color: #0056b3;
+  }

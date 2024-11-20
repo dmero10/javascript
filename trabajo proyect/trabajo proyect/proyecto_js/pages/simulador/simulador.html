@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de Lógica de Programación</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* Contenedor de las tarjetas */
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Estilos de las tarjetas */
+      .card {
+        flex: 1 1 calc(20% - 20px); /* Ajuste para 5 tarjetas por fila */
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+        min-height: 180px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+
+      .card p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .card a:hover {
+        background-color: #0056b3;
+      }
+      .boton-regresar {
+            position: absolute; /* Posiciona el botón en un lugar específico */
+            top: 10px;          /* Espaciado desde la parte superior */
+            left: 10px;         /* Espaciado desde la parte izquierda */
+            padding: 10px;      /* Espaciado interno del botón */
+            background-color: #007BFF; /* Color azul del fondo */
+            color: white;       /* Texto en blanco */
+            border: none;       /* Sin bordes */
+            border-radius: 5px; /* Bordes redondeados (ajústalo si quieres que sea más cuadrado) */
+            cursor: pointer;    /* Cambia el cursor a una mano al pasar el ratón */
+            font-size: 16px;    /* Tamaño del texto */
+            text-align: center; /* Centra el texto */
+        }
+
+        .boton-regresar:hover {
+            background-color: #0056b3; /* Cambia el color al pasar el ratón */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicios del Simulador de Moodle</h1>
+    <div class="grid">
+      <!-- 40 Tarjetas (5 por fila, 8 filas en total) -->
+      <!-- Fila 1 -->
+      <div class="card">
+        <h3>Par e Impar</h3>
+        <p>Dado un numero ingresado verfica si es Par o Impar</p>
+        <a href="./par_impar.html"
+          >Ver Ejercicio</a >
+      </div>
+      <div class="card">
+        <h3>Calcular Utilidad por Antigüedad</h3>
+        <p>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antigüedad en la empresa</p>
+        <a href="./simu2.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Secuencia Lógica de Diagrama de Flujo</h3>
+        <p>Siga la secuencia lógica de las instrucciones e indique cuál de las siguientes salidas es la correcta respecto a todos los valores que van tomando las variables</p>
+        <a href="./simu3.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>¿Qué es un Pseudocódigo?</h3>
+        <p>
+          Elije la opcion correcta que describe a Pseudocódigo
+        </p>
+        <a href="./simu4.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>¿Qué es un Corto Circuito?</h3>
+        <p>
+          Elije la opcion correcta que se entiende por corto circuito
+        </p>
+        <a href="./simu5.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Uso de Operadores Lógicos</h3>
+        <p>
+          Encontrar la afirmacion verdadera sobre el uso de operadores lógicos en estructuras condicionales
+        </p>
+        <a href="./simu6.html">Ver Ejercicio</a>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="card">
+        <h3>Modelos Abstractos</h3>
+        <p>Señalar cual es el primer paso para resolver un problema</p>
+        <a href="./simu7.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Metodología E-P-S</h3>
+        <p>Señala la mejor frase que describa proceso</p>
+        <a href="./simu8.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Calcular Costo Total</h3>
+        <p>con los datos dados calcular el costo total</p>
+        <a href="./simu9.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Operador Lógico</h3>
+        <p>Elije el operador correcto</p>
+        <a href="./simu10.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Diferencia entre AND y OR</h3>
+        <p>Elije la principal diferencia entre esos dos operadores</p>
+        <a href="./simu11.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Objetivo de la Depuración</h3>
+        <p>Encontrar el principal objetivo de la depuracion</p>
+        <a href="./simu12.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Complejidad Algorítmica</h3>
+        <p>Elije la afirmacion correcta</p>
+        <a href="./simu13.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Verificar Número Perfecto</h3>
+        <p>Ingresa un numero y el sistema verificara si un número cualquiera es perfecto o no.
+          Un número es perfecto cuando la suma de los divisores incluidos 1 </p>
+        <a href="./simu14.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Contar Dígitos en una Frase</h3>
+        <p>Ingrese una frase y el programa debe contar cuántos dígitos tiene esa frase</p>
+        <a href="./simu15.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Promedio de Números Pares</h3>
+        <p>Que el progrma genere 10 números y los almacene en un arreglo. Luego recórrelo y presenta el promedio de los números pares del arreglo.</p>
+        <a href="./simu16.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Contar Palabras en una Frase</h3>
+        <p>Pedir al usuario una frase y cuente cuántas palabras tiene</p>
+        <a href="./simu17.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Suma de Dígitos de un Número</h3>
+        <p>Dado un número, almacena sus dígitos en un arreglo y luego recorre el arreglo presentando la suma de esos dígitos.</p>
+        <a href="./simu18.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Diagrama de Flujo</h3>
+        <p>Realice la prueba de escritorio y seleccione el enunciado correcto</p>
+        <a href="./simu19.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Aplicación de Matriculación</h3>
+        <p>Resolver el costo total de una matricula</p>
+        <a href="./simu20.html">Ver Ejercicio</a>
+      </div>
+  </body>
+  <button class="boton-regresar" onclick="location.href='../../proyecto.html';">Regresar</button>
+</html>

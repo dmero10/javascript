@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar Signos de Puntuación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        main {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007acc;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #007acc;
+        }
+
+        input[type="text"], textarea {
+            padding: 10px;
+            border: 2px solid #007acc;
+            border-radius: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            font-size: 1rem;
+            background-color: #f0f8ff;
+            resize: none;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contar Signos de Puntuación</h1>
+        <form id="form9">
+            <label for="palabra">Ingrese una palabra o frase:</label>
+            <input type="text" id="palabra" name="palabra" placeholder="Ingrese una palabra o frase">
+
+            <button type="button" onclick="contarSignos()">Contar Signos</button>
+
+            <label for="resultado">Resultado:</label>
+            <textarea id="resultado" readonly placeholder="Aquí aparecerá la cantidad de signos de puntuación"></textarea>
+        </form>
+    </main>
+    <script src="/proyecto_js/js/cadenas.js"></script>

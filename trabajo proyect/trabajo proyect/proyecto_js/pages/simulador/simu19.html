@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Flujo - Número Mayor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        h2 {
+            color: #ff6347;
+            text-shadow: 2px 2px #ffa07a;
+            animation: bounce 2s infinite;
+        }
+        pre {
+            text-align: center;
+            background-color: #ffebcd;
+            border: 1px solid #ffa07a;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            color: #2f4f4f;
+        }
+        .form-check {
+            text-align: left;
+        }
+        .form-check-label {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4682b4;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .form-check-label:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #32cd32;
+            border: none;
+            font-size: 1.2rem;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #228b22;
+        }
+        .respuesta-correcta {
+            color: #32cd32;
+        }
+        .respuesta-incorrecta {
+            color: #dc143c;
+        }
+        .form-check-input:checked {
+            background-color: #ff4500 !important;
+            border-color: #ff4500 !important;
+        }
+        .form-check-input {
+            border: 2px solid #ff8c00;
+        }
+        .form-check-input:hover {
+            border-color: #ff6347;
+        }
+        .resultado {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-2">
+        <!-- Título de la pregunta -->
+        <h2 class="text-center">🔢 Diagrama de Flujo - Número Mayor 🔢</h2>
+
+        <!-- Mostrar el diagrama de flujo con una imagen en el centro -->
+        <div class="image-container">
+            <img src="/proyecto_js/img/image (1).png" alt="Diagrama de Flujo" />
+        </div>
+
+        <h4 class="text-center text-primary-emphasis">Seleccione el enunciado correcto según el diagrama de flujo</h4>
+
+        <!-- Opciones de respuesta -->
+        <form id="formularioPregunta" class="d-flex align-items-center justify-content-center">
+            <div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion1" value="a">
+                    <label class="form-check-label" for="opcion1">a) Diagrama de flujo que presenta el número mayor</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion2" value="b">
+                    <label class="form-check-label" for="opcion2">b) Diagrama de flujo que presenta el número menor y mayor</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion3" value="c">
+                    <label class="form-check-label" for="opcion3">c) Diagrama de flujo que presenta el número mayor y menor</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion4" value="d">
+                    <label class="form-check-label" for="opcion4">d) Diagrama de flujo que presenta el número menor</label>
+                </div>
+                <!-- Botón para verificar la respuesta -->
+                <button type="button" class="btn btn-primary mt-3" onclick="verificarRespuesta19()">Aceptar</button>
+                <button class="btn btn-danger text-white mt-3" type="submit">Regresar</button>
+            </div>
+            <!-- Sección para mostrar el resultado al mismo nivel de las opciones -->
+            <div id="resultado" class="resultado ms-5 h4"></div>
+        </form>
+    </div>
+</body>
+<script src="/proyecto_js/js/simulador.js"></script>
+</html>

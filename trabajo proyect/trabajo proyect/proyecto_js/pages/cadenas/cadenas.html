@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de Lógica de Programación</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* Contenedor de las tarjetas */
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Estilos de las tarjetas */
+      .card {
+        flex: 1 1 calc(20% - 20px); /* Ajuste para 5 tarjetas por fila */
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+        min-height: 180px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+
+      .card p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .card a:hover {
+        background-color: #0056b3;
+      }
+      .boton-regresar {
+            position: absolute; /* Posiciona el botón en un lugar específico */
+            top: 10px;          /* Espaciado desde la parte superior */
+            left: 10px;         /* Espaciado desde la parte izquierda */
+            padding: 10px;      /* Espaciado interno del botón */
+            background-color: #007BFF; /* Color azul del fondo */
+            color: white;       /* Texto en blanco */
+            border: none;       /* Sin bordes */
+            border-radius: 5px; /* Bordes redondeados (ajústalo si quieres que sea más cuadrado) */
+            cursor: pointer;    /* Cambia el cursor a una mano al pasar el ratón */
+            font-size: 16px;    /* Tamaño del texto */
+            text-align: center; /* Centra el texto */
+        }
+
+        .boton-regresar:hover {
+            background-color: #0056b3; /* Cambia el color al pasar el ratón */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicios Cadenas</h1>
+    <div class="grid">
+      <!-- 40 Tarjetas (5 por fila, 8 filas en total) -->
+      <!-- Fila 1 -->
+      <div class="card">
+        <h3>Concatenar Nombre y Apellido</h3>
+        <p>1.	Ingresar un nombre y un apellido: dado un nombre y apellido ingresado presentarlo concatenado: apellido y nombre.</p>
+        <a href="ca1.html"
+          >Ver Ejercicio</a >
+      </div>
+      <div class="card">
+        <h3>Comparar frases</h3>
+        <p>2.	Comparar frases: Dada dos frases indicar si son iguales o la primera en mayor o menor que la segunda.</p>
+        <a href="ca2.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Espacio entre cada caracter</h3>
+        <p>3.	Ingresar palabra: Ingresar una palabra y crear otra palabra con cada carácter de la primera palabra dejando un espacio entre cada caracter.</p>
+        <a href="ca3.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Código asccii del carácter</h3>
+        <p>
+          4.	Dada una frase: presentar cada carácter con su respectivo código asccii. Para este ejercicio usar una función de javascript que devuelve el código asccii del carácter.
+        </p>
+        <a href="ca4.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Invertir una palabra</h3>
+        <p>
+          5.	Invertir una palabra: Invertir una frase ingresada por el usuario.
+        </p>
+        <a href="ca5.html">Ver Ejercicio</a>
+      </div>
+      <!-- Fila 2 -->
+      <div class="card">
+        <h3>Contar vocales en una palabra</h3>
+        <p>6.	Contar vocales en una palabra: Contar cuántas vocales tiene una palabra ingresada por el usuario.</p>
+        <a href="ca6.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Contar las letras del alfabeto </h3>
+        <p>7.	Contar las letras del alfabeto en una palabra: Contar cuántas letras del alfabeto tiene una palabra ingresada por el usuario.</p>
+        <a href="ca7.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Contar dígitos de una frase</h3>
+        <p>8.	Contar dígitos de una frase: Contar cuántos dígitos tiene una frase ingresada por el usuario.</p>
+        <a href="ca8.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Contar los signos de puntuación</h3>
+        <p>9.	Contar los signos de puntuación en una palabra: Contar cuántos signos de puntuación tiene una palabra ingresada por el usuario.</p>
+        <a href="ca9.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Contar palabras en una frase</h3>
+        <p>10.	Contar palabras en una frase: Contar cuántas palabras tiene una frase ingresada por el usuario.</p>
+        <a href="ca10.html">Ver Ejercicio</a>
+      </div>
+      <button class="boton-regresar" onclick="location.href='../../proyecto.html';">Regresar</button>
+  </body>
+</html>

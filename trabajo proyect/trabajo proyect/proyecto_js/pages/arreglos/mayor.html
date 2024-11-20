@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promedio de Números Mayores a un Valor</title>
+  <style>
+    /* Estilos generales */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    main {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    main:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ff6347;
+      text-shadow: 2px 2px #ffa07a;
+      animation: bounce 2s infinite;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #007acc;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      height: 50px;
+      font-size: 1rem;
+      padding: 10px;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      background-color: #f0f8ff;
+      color: #094268;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"]:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      font-size: 1rem;
+      padding: 10px;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      background-color: #f0f8ff;
+      color: #ff6200;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #007acc;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Promedio de Números Mayores a un Valor</h1>
+    <form>
+      <!-- Campo para ingresar los números -->
+      <div>
+        <label for="numeros">Números (separados por punto y coma)</label>
+        <input type="text" id="numeros" placeholder="Ej: 12; 5; 8; 20; 15">
+      </div>
+
+      <!-- Campo para ingresar el límite -->
+      <div>
+        <label for="limite">Valor Límite</label>
+        <input type="text" id="limite" placeholder="Ej: 10">
+      </div>
+
+      <!-- Área para mostrar la respuesta -->
+      <div>
+        <label for="resp">Respuesta</label>
+        <textarea id="resp" readonly placeholder="Aquí va el resultado..."></textarea>
+      </div>
+
+      <!-- Botón para calcular el promedio -->
+      <button type="button" onclick="calcularPromedio()">Calcular</button>
+    </form>
+  </main>
+
+  <script src="../../js/arreglos.js"></script>
+</body>
+</html>
